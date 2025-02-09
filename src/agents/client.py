@@ -17,3 +17,5 @@ def get_client():
     )
     
     return model_client
+    
+global_client = get_client()
