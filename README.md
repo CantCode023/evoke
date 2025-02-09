@@ -11,6 +11,20 @@ Evoke aims to help users find a project idea to relieve the coding itch, therefo
 - 💡 Recommends repositories that best fit the user's prompts
 - 📈 Give detailed reports of a specified repository
 
+# Table of Contents
+- [About](#about)
+- [💡 Key Features](#-key-features)
+- [🚀 Getting Started](#-getting-started)
+  - [📄 Cloning the repository](#-cloning-the-repository)
+  - [📦 Installation](#-installation)
+  - [🔑 Environment variables](#-environment-variables)
+  - [🚀 Usage](#-usage)
+  - [📝 License](#-license)
+  - [🖊️ TODO-List](#️-todo-list)
+- [Made with ❤️ by @CantCode023](#made-with-❤️-by-cancode023)
+
+---
+
 > [!WARNING]
 > Evoke is still a work in progress!
 
@@ -45,6 +59,13 @@ python main.py
 ## 📝 License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🖊️ TODO-List
+- [ ] 🤖 Fine-tune **query generation** to avoid hallucinations.
+- [ ] 🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.
+- [ ] ⌨️ Add loop-support to allow agent to change suggestions.
+- [ ] 📈 Add CLI implementation using Rich.
+- [ ] ✨ Refactor and optimize codebase.
 
 ---
 
