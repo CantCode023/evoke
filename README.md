@@ -61,8 +61,8 @@ python main.py
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## 🖊️ TODO-List
-- [ ] 🤖 Fine-tune **query generation** to avoid hallucinations.
-- [ ] 🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.
+- [x] 🤖 Fine-tune **query generation** to avoid hallucinations.
+- [x] 🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.
 - [ ] ⌨️ Add loop-support to allow agent to change suggestions.
 - [ ] 📈 Add CLI implementation using Rich.
 - [ ] ✨ Refactor and optimize codebase.
