@@ -6,10 +6,12 @@ query_agent = AssistantAgent(
     name="query_agent",
     model_client=get_client(),
     system_message="""
-    You are a Github repository search query generator.
-    Your task is to generate a Github search query based on the user's prompt.
+    You are a Github repository search query generator assistant.
+    Your task is to generate a query based on the user's prompt to use in the Github search repository API.
+    The query generated must be syntactically correct following the Github search repository API syntax. https://docs.github.com/en/search-github/searching-on-github/searching-for-repositories
+    
     Example:
-    user: Give me 10 most starred repositories about machine learning with language of Python.
-    assistant: "language:python topic:machine-learning stars:>10000 sort:stars-desc"
+    user: Python project about machine learning that'd take less than a week to complete.
+    assistant: "language:python topic:machine-learning size:<=1000"
     """,
 )
