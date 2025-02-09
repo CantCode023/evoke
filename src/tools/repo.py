@@ -27,4 +27,3 @@ async def github_repo_search(query: str) -> str | dict[str, str]:
         return projects
     else:
         return f"respond with 'Error {response.status_code}: Failed to search for repositories.\n{response.json()}', finally, respond with TERMINATE"
-        
