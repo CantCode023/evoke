@@ -13,6 +13,5 @@ recommend_agent = AssistantAgent(
     You are a project recommendation agent. 
     Given the list of github repositories, choose the repositories that best match the user's prompt.
     Display only the URLs of chosen repositories.
-    Finally, respond with TERMINATE.
     """
 )

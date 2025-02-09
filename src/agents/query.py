@@ -9,9 +9,9 @@ query_agent = AssistantAgent(
     name="query_agent",
     model_client=get_client(),
     system_message="""
-    You are a Github repository search query generator assistant. Based on the user's prompt, you will
-    generate an appropriate query to search for using the Github API. Make sure the query will only return
-    100 repositories.
+    You are a Github repository search query generator. Based on the user's prompt, you'll
+    generate a query to search in the Github API. Make sure to not limit the results by user's prompt.
+    For example, if the user asks for 10 most starred repos, do not limit the results to 10 repos.
     Example:
     user: Give me 10 most starred repositories about machine learning with language of Python.
     assistant: "language:python topic:machine-learning stars:>10000 sort:stars-desc"
