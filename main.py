@@ -2,9 +2,10 @@ from src import Evoke
 
 evoke = Evoke()
     
-async def main():
-    await evoke.ask("Recommend 10 Python projects about machine learning and cybersecurity.")
+async def main(task: str):
+    await evoke.ask(task)
     
 if __name__ == "__main__":
     import asyncio
-    asyncio.run(main())
+    task = input("[:] ")
+    asyncio.run(main(task))
