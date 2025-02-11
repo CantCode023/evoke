@@ -63,7 +63,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 🖊️ TODO-List
 - [x] ~🤖 Fine-tune **query generation** to avoid hallucinations.~
 - [x] ~🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.~
-- [x] ⌨️ Add loop-support to allow agent to change suggestions.
+- [x] ~⌨️ Add loop-support to allow agent to change suggestions.~
 - [ ] 📈 Add CLI implementation using Rich.
 - [ ] ✨ Refactor and optimize codebase.
 
