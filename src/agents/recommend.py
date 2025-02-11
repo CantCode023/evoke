@@ -16,6 +16,7 @@ recommend_agent = AssistantAgent(
     For example, do not recommend "https://github.com/fastapi/fastapi", but instead recommend repositories that uses fastapi to make a unique project.
     Display the URLs of chosen repositories and the description below it.
     If an error occurs, return the error message and then return TERMINATE.
+    If you are met with REGENERATE, you must recommend other repositories that wasn't recommended before.
     Example:
     - URL
     > Description
