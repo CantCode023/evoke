@@ -33,4 +33,5 @@ class Evoke:
         )
     
     async def ask(self, task_message: str):
-        await Console(self.team.run_stream(task=task_message))
+        result = await self.team.run(task=task_message)
+        return result
