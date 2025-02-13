@@ -12,7 +12,7 @@ Evoke aims to help users find a project idea to relieve the coding itch, therefo
 - 🤖 Query generation using Gemini 2.0 Flash
 - 🔎 Searches repositories based on user's prompts
 - 💡 Recommends repositories that best fit the user's prompts
-- 📈 Give detailed reports of a specified repository
+- 📈 Give detailed reports of a specified repository using Gemini 2.0 Pro
 
 # Table of Contents
 - [About](#about)
