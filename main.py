@@ -3,12 +3,16 @@ from rich import print as rprint
 from rich.pretty import pprint
 import os
 
+import asyncio
+import nest_asyncio
+nest_asyncio.apply()
+
 evoke = Evoke()
 
 def clear():
     os.system('cls' if os.name == 'nt' else 'clear')
     
-async def main():
+def main():
     clear()
     
     MENU = """[bright_white]:::::::::: :::     :::  ::::::::  :::    ::: :::::::::: 
@@ -28,14 +32,19 @@ type TERMINATE to exit.."""
     if task == "TERMINATE":
         return 0
     else:
-        result = await evoke.ask(task_message=task)
-        pprint(result)
+        loop = asyncio.new_event_loop()
+        asyncio.set_event_loop(loop)
+        try:
+            loop.run_until_complete(evoke.ask(task_message=task))
+        except:
+            loop.close()
+        finally:
+            loop.close()
         print("Press enter to continue...")
         input()
         return 1
     
 if __name__ == "__main__":
-    import asyncio
     result = 1
     while result:
-        result = asyncio.run(main())
+        result = main()
