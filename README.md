@@ -9,7 +9,7 @@ Evoke first generates a search query based on the user's prompts, Then, it uses 
 Evoke aims to help users find a project idea to relieve the coding itch, therefore, **evoking excitement**.
 
 # 💡 Key Features
-- 🤖 Query generation using Gemini 2.0 Flash
+- 🤖 Query generation using Gemini 1.5 Flash 8B
 - 🔎 Searches repositories based on user's prompts
 - 💡 Recommends repositories that best fit the user's prompts
 - 📈 Give detailed reports of a specified repository using Gemini 2.0 Pro
@@ -65,6 +65,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.~
 - [x] ~⌨️ Add loop-support to allow agent to change suggestions.~
 - [ ] 📈 Add CLI implementation using Rich.
+- [ ] ⚠️ Add support to respect rate limits.
 - [ ] ✨ Refactor and optimize codebase.
 
 ---
