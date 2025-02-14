@@ -5,8 +5,8 @@ load_dotenv()
 
 def get_client():
     model_client = OpenAIChatCompletionClient(
-        model="gemini-2.0-flash",
-        base_url="https://generativelanguage.googleapis.com/v1beta/openai/",
+        model="gemini-1.5-flash-8b",
+        base_url="https://generativelanguage.googleapis.com/v1beta/",
         api_key=os.environ["GEMINI_API_KEY"],
         model_info={
             "vision": True,
