@@ -44,7 +44,7 @@ report_agent = AssistantAgent(
     - (Second information)
     - (Third information)
      
-    Finally, respond with TERMINATE.
+    Finally, respond with REPORT_BACK.
     """,
    reflect_on_tool_use=True 
 )
