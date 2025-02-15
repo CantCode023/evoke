@@ -1,6 +1,5 @@
 from src import Evoke
 from rich import print as rprint
-from rich.pretty import pprint
 import os
 
 import asyncio
