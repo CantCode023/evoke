@@ -8,7 +8,7 @@ report_agent = AssistantAgent(
     model_client=get_client_for_report(),
     tools=[github_repo_fetch_contents],
     system_message="""
-    Using the tool given, fetch the contents of the given repository URL.
+    Using the tool github_repo_fetch_contents, fetch the contents of the given repository URL.
     After fetching the repository contents, display details in this format:
         
     # Repository name
