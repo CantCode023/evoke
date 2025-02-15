@@ -1,3 +1,4 @@
+from autogen_agentchat.base import TaskResult
 from autogen_agentchat.conditions import TextMentionTermination
 from autogen_agentchat.teams import SelectorGroupChat
 from autogen_agentchat.ui import Console
@@ -34,4 +35,8 @@ class Evoke:
         )
     
     async def ask(self, task_message: str):
-        await Console(self.team.run_stream(task=task_message))
+        async for message in self.team.run_stream(task=task_message):
+            if isinstance(message, TaskResult):
+                print("Stop reason:", message.stop_reason)
+            elif message.type == "TextMessage" and (message.source == "recommend_agent" or message.source == "report_agent"):
+                print(message.content)
