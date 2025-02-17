@@ -9,7 +9,7 @@ from src.agents.user import user_proxy
 from src.agents.report import report_agent
 from src.agents.client import get_client
 
-from rich.console import Console
+from rich.console import Console as rConsole
 from rich.markdown import Markdown
 
 class Evoke:
@@ -42,5 +42,6 @@ class Evoke:
             if isinstance(message, TaskResult):
                 print("Stop reason:", message.stop_reason)
             elif message.type == "TextMessage" and (message.source == "recommend_agent" or message.source == "report_agent"):
-                console = Console()
+                print("TEST")
+                console = rConsole()
                 console.print(Markdown(message.content))
