@@ -67,7 +67,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~⌨️ Add loop-support to allow agent to change suggestions.~
 - [x] ~📈 Add CLI implementation using Rich.~
 - [x] ~🐑 Use OpenRouter instead of Google AI Studio to avoid rate limits.~
-- [ ] ⚠️ Add support to respect rate limits.
+- [x] ~⚠️ Add support to respect rate limits.~
 - [ ] ✨ Refactor and optimize codebase.
 
 ---
