@@ -24,6 +24,7 @@ Evoke aims to help users find a project idea to relieve the coding itch, therefo
   - [🚀 Usage](#-usage)
   - [📝 License](#-license)
   - [🖊️ TODO-List](#️-todo-list)
+  - [📷 Video walkthrough](#-video-walkthrough)
 - [Made with ❤️ by @CantCode023](#made-with-❤️-by-cancode023)
 
 ---
@@ -69,6 +70,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~🐑 Use OpenRouter instead of Google AI Studio to avoid rate limits.~
 - [x] ~⚠️ Add support to respect rate limits.~
 - [x] ~✨ Refactor and optimize codebase.~
+
+## 📷 Video walkthrough
+![Video](./assets/evoke-walkthrough.mp4)
 
 ---
 
