@@ -39,9 +39,6 @@ class Evoke:
     
     async def ask(self, task_message: str):
         async for message in self.team.run_stream(task=task_message):
-            if isinstance(message, TaskResult):
-                print("Stop reason:", message.stop_reason)
-            elif message.type == "TextMessage" and (message.source == "recommend_agent" or message.source == "report_agent"):
-                print("TEST")
+            if not isinstance(message, TaskResult) and message.type == "TextMessage" and (message.source == "recommend_agent" or message.source == "report_agent"):
                 console = rConsole()
                 console.print(Markdown(message.content))
