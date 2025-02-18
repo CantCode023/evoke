@@ -18,10 +18,10 @@ recommend_agent = AssistantAgent(
     If an error occurs, return the error message and then return TERMINATE.
     If you are met with REGENERATE, you must recommend other repositories that wasn't recommended before.
     Example:
-    - URL
+    # URL
     > Description
     (newline)
-    - URL 2
+    # URL 2
     > Description 2
     ...
     """,
