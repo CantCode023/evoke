@@ -12,12 +12,14 @@ from src.agents.client import get_client
 from rich.console import Console as rConsole
 from rich.markdown import Markdown
 
+import time
 class Evoke:
     def __init__(self):
         self.agent_order = [query_agent, recommend_agent, user_proxy, report_agent]
         self.current_index = 0
         
         def selector_func(message):
+            time.sleep(4) # Ensure rate-limit is not exceeded
             if message[-1].content == "REGENERATE" and message[-1].source == "user_proxy":
                 self.current_index = 2
                 return "recommend_agent"
