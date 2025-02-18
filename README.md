@@ -1,8 +1,5 @@
 ![Header](./assets/header.png)
 
-> [!WARNING]
-> Evoke is still a work in progress!
-
 # About
 Evoke is a simple Multi-AI Agent to suggest project ideas based on user's prompts.
 Evoke first generates a search query based on the user's prompts, Then, it uses the search query to query the relevant repositories and recommends the repositories that best fit the user's prompts.
@@ -70,6 +67,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~🐑 Use OpenRouter instead of Google AI Studio to avoid rate limits.~
 - [x] ~⚠️ Add support to respect rate limits.~
 - [x] ~✨ Refactor and optimize codebase.~
+- [ ] 💻 Use Streamlit for better readability
+- [ ] 🤖 Add **project generation** to generate unique projects based on saved repositories.
 
 ## 📷 Video walkthrough
 [![Watch the video walkthrough](https://img.youtube.com/vi/5pRpD6zeyUQ/maxresdefault.jpg)](https://youtu.be/5pRpD6zeyUQ)
