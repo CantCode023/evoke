@@ -72,7 +72,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~✨ Refactor and optimize codebase.~
 
 ## 📷 Video walkthrough
-![Video](./assets/evoke-walkthrough.mp4)
+[![Watch the video walkthrough](https://img.youtube.com/vi/5pRpD6zeyUQ/maxresdefault.jpg)](https://youtu.be/5pRpD6zeyUQ)
 
 ---
 
