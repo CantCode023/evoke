@@ -1,11 +1,11 @@
 from autogen_agentchat.agents import AssistantAgent
 
-from .client import get_client_for_report
+from .client import get_client
 from src.tools.contents import github_repo_fetch_contents
 
 report_agent = AssistantAgent(
     name="report_agent",
-    model_client=get_client_for_report(),
+    model_client=get_client(),
     tools=[github_repo_fetch_contents],
     system_message="""
     Using the tool github_repo_fetch_contents, fetch the contents of the given repository URL.
