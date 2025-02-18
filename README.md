@@ -44,10 +44,11 @@ pip install -r requirements.txt
 
 ## 🔑 Environment variables
 
+You can get your API key from [OpenRouter](https://openrouter.ai/settings/keys).
 Create a `.env` file in the project directory and add the following variables:
 
 ```bash
-GEMINI_API_KEY="YOUR_API_KEY"
+OPENROUTER_API_KEY="YOUR_API_KEY"
 ```
 
 ## 🚀 Usage
@@ -65,7 +66,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - [x] ~🤖 Fine-tune **recommend agent** to prioritize project repositories than package repositories.~
 - [x] ~⌨️ Add loop-support to allow agent to change suggestions.~
 - [x] ~📈 Add CLI implementation using Rich.~
-- [ ] 🐑 Use Ollama with llama3.2 as default model to avoid rate limits.
+- [x] ~🐑 Use OpenRouter instead of Google AI Studio to avoid rate limits.~
 - [ ] ⚠️ Add support to respect rate limits.
 - [ ] ✨ Refactor and optimize codebase.
 
